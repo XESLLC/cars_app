@@ -1,0 +1,7 @@
+<%= link_to "New", new_make_path %>
+
+<% @makes.each do |make| %>
+
+<%= link_to make.name, make_models_path(make) %>
+
+<% end %>
